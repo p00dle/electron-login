@@ -1,6 +1,6 @@
 {
   "name": "electron-login",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get session data by logging into external service",
   "main": "./dist/index.js",
   "author": "Krzysztof Siuda",
@@ -18,6 +18,8 @@
     "@kksiuda/https-request": "^0.1.1"
   },
   "scripts": {
+    "pre-build": "tsc --noEmit && eslint . --ext .ts && prettier --write .",
+    "dist": "tsc",
     "start": "tsc && electron ."
   }
 }
