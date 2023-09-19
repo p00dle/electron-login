@@ -4,7 +4,7 @@ import { addElectronCookiesToJar } from './addElectronCookiesToJar';
 import { hasCookies } from './hasCookies';
 import { ExpectedCookie } from './types/ExpectedCookie';
 
-export async function getSessionCookieJar(url: string, expectedCookies: ExpectedCookie[]): Promise<CookieJar> {
+export async function login(url: string, expectedCookies: ExpectedCookie[]): Promise<CookieJar> {
   return new Promise(async (resolve, reject) => {
     const cookieJar = new CookieJar();
     const win = new BrowserWindow({

@@ -1,6 +1,6 @@
 {
   "name": "electron-login",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Get session data by logging into external service",
   "main": "./dist/index.js",
   "author": "Krzysztof Siuda",

@@ -7,8 +7,6 @@ if (isMainModule(module)) {
     () => console.log('Completed without errors'),
     (err: any) => console.error(err)
   );
-} else {
-  console.log('is not main module');
 }
 
-export { getSessionCookieJar } from './getSessionCookieJar';
+export { login } from './login';
